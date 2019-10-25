@@ -8,3 +8,7 @@ cache:
     - node_modules
 before_install:
   - mysql -e 'CREATE DATABASE IF NOT EXISTS testdb;'
+addons:
+  apt:
+    packages:
+      - mysql-server-5.5
